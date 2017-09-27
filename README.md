@@ -1,6 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+# Reminder-Pro
 
-Below you will find some information on how to perform common tasks.<br>
+Single-page web app for creating and managing reminders with timestamp labels.
 
+### Try it out
+Here's a link of the deployment on gh-pages [live preview](https://)
 
-## Table of Contents
+### Stack
+> **React**  (bootstrapped with **create-react-app**)  
+> **Redux**  
+> **MomentJS**  
+> **react-bootstrap**  
+> **sfcookies** 
+
