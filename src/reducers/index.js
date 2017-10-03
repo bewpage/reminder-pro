@@ -3,7 +3,6 @@ import { bake_cookie, read_cookie } from 'sfcookies';
 
 import reminder from './reducer_reminder';
 import removeById from './reducer_removebyid';
-import user from './reducer_user';
 
 
 
