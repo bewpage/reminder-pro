@@ -1,20 +1,10 @@
 import {ADD_REMINDER, DELETE_REMINDER, CLEAR_REMINDERS } from "../constant";
 import { bake_cookie, read_cookie } from 'sfcookies';
 
-const reminder = (action) => {
-    let {text, dueDate} = action; //this is jsx, normally in return should be action.text and action.dueDate
-    return {
-        id: Math.random(),
-        text,
-        dueDate
-    }
-};
+import reminder from './reducer_reminder';
+import removeById from './reducer_removebyid';
+import user from './reducer_user';
 
-const removeById = (state = [], id) => {
-    const reminders = state.filter(reminder => reminder.id !== id);
-    console.log('new reducer reminders', reminders);
-    return reminders;
-};
 
 
 const reminders = (state = [], action) => {
