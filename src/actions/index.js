@@ -1,4 +1,6 @@
-import { ADD_REMINDER, DELETE_REMINDER, CLEAR_REMINDERS } from "../constant";
+// **** firebase version *****
+//added two constants SIGNED_IN and SET_REMINDERS
+import { ADD_REMINDER, DELETE_REMINDER, CLEAR_REMINDERS, SIGNED_IN, SET_NEW_REMINDERS } from "../constant";
 
 
 //tu stworzylismy action creator function
@@ -27,5 +29,24 @@ export const clearReminders = () => {
     }
 };
 
+
+// **** firebase version *****
+//new version add extra things for firebase
+
+export function logUser(email){
+    const action = {
+        type: SIGNED_IN,
+        email
+    };
+    return action;
+}
+
+export function setNewReminders(newReminders){
+    const action = {
+        type: SET_NEW_REMINDERS,
+        newReminders
+    };
+    return action;
+}
 
 
