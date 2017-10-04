@@ -13,7 +13,7 @@ Here's a link of the deployment on gh-pages [live preview](https://bewpage.githu
 > **sfcookies** 
 
 ### I extended this application with:
-- Cookies - string names that map string values stored on the browser. Allows applications to keep a local history of data on a browser.
+- Cookies - application keeps a local history of data on a browser (next step to use database).
 - Add alert messages to the application if the current date passes the due date for a reminder - now old reminders have red border.
 - All entries are displayed in date order.
 - >Host the application on a database so multiple users can interact with the same reminders - not yet done.

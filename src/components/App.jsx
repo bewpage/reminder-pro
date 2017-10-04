@@ -26,7 +26,8 @@ class App extends Component {
     addReminder = (event) => {
         event.preventDefault();
         this.props.addReminder(this.state.text, this.state.dueDate);
-        // console.log('this is state of dueDate', this.state.dueDate);
+        console.log('this is this.props.addReminder', this.props.addReminder);
+        console.log('this is state of dueDate', this.state.dueDate);
     };
 
 
@@ -45,10 +46,7 @@ class App extends Component {
 
     renderReminders(){
       const reminders = this.props.reminders;
-      console.log('render orginal Remindrs', reminders);
       const newReminders = this.sortByDate(reminders);
-      // console.log('costam wynik', newReminders);
-      // console.log('newReminders', newReminders);
       return(
           <ul className='list-group col-sm-4'>
               {
