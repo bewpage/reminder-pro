@@ -72,11 +72,12 @@ class App extends Component {
 
     renderAlert(){
         let reminders = this.props.reminders;
-
+        console.log('render alert', reminders);
         reminders.map(date => {
             let id = date.id;
             let reminderDate = date.dueDate;
             let liElement = ReactDOM.findDOMNode(this.refs[id]);
+            console.log('liElement', liElement);
             if(moment().isSameOrBefore(reminderDate)){
                 return liElement.setAttribute('class', 'list-group-item green');
             }

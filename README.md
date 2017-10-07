@@ -9,11 +9,11 @@ Here's a link of the deployment on gh-pages [live preview](https://bewpage.githu
 > **React**  (bootstrapped with **create-react-app**)  
 > **Redux**  
 > **MomentJS**  
-> **react-bootstrap**  
+> **React-Bootstrap**  
 > **sfcookies** 
 
 ### I extended this application with:
 - Cookies - application keeps a local history of data on a browser (next step to use database).
-- Add alert messages to the application if the current date passes the due date for a reminder - now old reminders have red border.
+- Passed event alert.
 - All entries are displayed in date order.
-- >Host the application on a database so multiple users can interact with the same reminders - not yet done.
+- Host the application on a database so multiple users can interact with the same reminders - done in new version app "Reminder Pro New".
